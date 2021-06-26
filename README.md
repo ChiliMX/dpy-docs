@@ -14,7 +14,7 @@ bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
 docs = DocGen(bot)
 
 
-@docs.generate_docs()
+@docs.document_code()
 @bot.command()
 async def foo(ctx: commands.Context) -> None:
     """This is an example command"""
